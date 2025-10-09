@@ -1,8 +1,494 @@
 body{
     color: white;
     background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
 }
 ul{
    display:flex;
-   justify-content:space-between ; 
+   justify-content:space-around ; 
+   list-style: none;
+   align-items: center;
+   padding: 16px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #111;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #000;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #550303;
+}
+
+
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, #000, #222);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #8d1515;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.sinopse {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    gap: 40px;
+}
+
+.sinopse .texto {
+    flex: 1 1 500px;
+}
+
+.sinopse .imagem {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sinopse img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+
+
+
+
+/* Reset e estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #111;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+/* Navegação */
+nav {
+    background-color: #000;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #68050a; /* vermelho no hover */
+}
+
+/* Cabeçalho */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, #000, #222);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #51080b;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;               
+    justify-content: center;      
+    align-items: flex-start;       
+    gap: 30px;                     
+    max-width: 1200px;
+}
+
+
+.foto {
+    display: flex;
+    flex-direction: column;        
+    align-items: center;
+    text-align: center;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 280px;
+}
+
+.foto img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    margin-bottom: 8px;
+}
+
+.foto p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+
+.foto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(138, 1, 8, 0.6);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .galeria {
+        gap: 15px;
+    }
+    .foto {
+        width: 90%;
+    }
+}
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #111;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+/* Navegação */
+nav {
+    background-color: #000;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e50914; /* vermelho no hover */
+}
+
+/* Cabeçalho */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, #000, #222);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #e50914;
+    margin-bottom: 10px;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+/* Secção do elenco (Flexbox) */
+.elenco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+}
+
+/* Cartão de cada ator */
+.ator {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    width: 260px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ator img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    margin-bottom: 15px;
+}
+
+.ator h3 {
+    color: #e50914;
+    margin-bottom: 8px;
+}
+
+.ator p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Efeito hover */
+.ator:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(229, 9, 20, 0.6);
+}
+
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #111;
+    color: #f5f5f5;
+    line-height: 1.5; /* ligeiramente mais compacta */
+}
+
+/* Navegação */
+nav {
+    background-color: #000;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e50914;
+}
+
+/* Cabeçalho */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, #000, #222);
+}
+
+.header h1 {
+    font-size: 2.3rem; /* ligeiramente menor */
+    margin-bottom: 10px;
+    color: #e50914;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+/* Ficha Técnica - Flexbox */
+.ficha {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.coluna {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 300px;
+    max-width: 350px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-wrap: break-word;
+    font-size: 0.85rem; /* fonte menor */
+}
+
+.coluna:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(229, 9, 20, 0.6);
+}
+
+.coluna h2 {
+    color: #e50914;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.coluna ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.coluna li {
+    margin-bottom: 6px;
+    color: #ccc;
+}
+
+/* Curiosidades */
+.curiosidades {
+    max-width: 900px;
+    text-align: justify;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    overflow-wrap: break-word;
+    font-size: 0.88rem; /* fonte menor */
+}
+
+.curiosidades h2 {
+    color: #e50914;
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.curiosidades p {
+    color: #ddd;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #888;
+    font-size: 0.85rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .ficha {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .coluna {
+        width: 90%;
+        max-width: none;
+        font-size: 0.82rem; /* ainda menor em mobile */
+    }
+
+    .curiosidades {
+        width: 90%;
+        font-size: 0.84rem;
+    }
 }
