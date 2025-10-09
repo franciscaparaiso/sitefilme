@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Padrinho</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #111;
+      color: #fff;
+    }
+    header, footer {
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      font-style: italic;
+      color: #bbb;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    .poster {
+      display: flex;
+      justify-content: center;
+    }
+    .poster img {
+      max-width: 300px;
+      border-radius: 8px;
+    }
+    .sinopse, .info, .galeria, .elenco {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .info .dados {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .dados div {
+      background: #222;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .galeria-imagens {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .galeria-imagens img {
+      width: 220px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card {
+      background: #222;
+      padding: 15px;
+      border-radius: 8px;
+      width: 220px;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+    footer {
+      color: #aaa;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>O Padrinho</h1>
+    <p>“A família é tudo.”</p>
+  </header>
+
+  <div class="container">
+    <section class="poster">
+      <img src="https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg" alt="Poster do filme O Padrinho">
+    </section>
+
+    <section class="sinopse">
+      <h2>Sinopse</h2>
+      <p>
+        "O Padrinho" é uma das obras mais icónicas da história do cinema, realizada por Francis Ford Coppola e baseada no romance de Mario Puzo. O filme narra a história da poderosa família Corleone, liderada por Don Vito Corleone, um homem respeitado e temido no submundo do crime organizado em Nova Iorque. Quando Vito sofre uma tentativa de assassinato, o seu filho Michael, que inicialmente queria afastar-se do negócio da família, é forçado a assumir o papel de líder e a proteger aqueles que ama.
+      </p>
+      <p>
+        Ao longo do enredo, Michael transforma-se de um jovem idealista num frio e calculista chefe da máfia. O filme aborda temas como poder, lealdade, corrupção e o peso das decisões morais. Com atuações lendárias e uma atmosfera envolvente, “O Padrinho” tornou-se um símbolo de excelência cinematográfica, sendo amplamente considerado um dos melhores filmes de todos os tempos.
+      </p>
+    </section>
+
+    <section class="info">
+      <h2>Informações Técnicas</h2>
+      <div class="dados">
+        <div><strong>Realizador:</strong> Francis Ford Coppola</div>
+        <div><strong>Ano:</strong> 1972</div>
+        <div><strong>Duração:</strong> 175 minutos</div>
+        <div><strong>Género:</strong> Crime, Drama</div>
+      </div>
+    </section>
+
+    <section class="galeria">
+      <h2>Galeria</h2>
+      <div class="galeria-imagens">
+        <img src="https://upload.wikimedia.org/wikipedia/en/4/4d/Godfather_soundtrack.jpg" alt="Cena 1">
+        <img src="https://upload.wikimedia.org/wikipedia/en/6/6c/Godfather_part_ii.jpg" alt="Cena 2">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/9d/Godfather_part_iii.jpg" alt="Cena 3">
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/51/Marlon_Brando_as_Vito_Corleone_in_The_Godfather.jpg" alt="Cena 4">
+      </div>
+    </section>
+
+    <section class="elenco">
+      <h2>Elenco Principal</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Marlon_Brando_1950s.jpg" alt="Marlon Brando">
+          <h3>Marlon Brando</h3>
+          <p>Vito Corleone</p>
+        </div>
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Al_Pacino_1971.jpg" alt="Al Pacino">
+          <h3>Al Pacino</h3>
+          <p>Michael Corleone</p>
+        </div>
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/James_Caan_-_Publicity.jpg" alt="James Caan">
+          <h3>James Caan</h3>
+          <p>Sonny Corleone</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>Site educativo criado como exemplo — inspirado em “O Padrinho”.</p>
+  </footer>
+</body>
+</html>
